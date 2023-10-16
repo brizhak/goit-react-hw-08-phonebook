@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkphonebook=self.webpackChunkphonebook||[]).push([[525],{525:function(n,e,o){o.r(e),o.d(e,{default:function(){return c}});o(2791);var r=o(1087),t="NotFound_container__YhTn+",u=o(3329),c=function(){return(0,u.jsxs)("div",{className:t,children:["Error 404. Page not found.",(0,u.jsx)("br",{}),(0,u.jsx)(r.rU,{to:"/",children:" Back to the Home page."})]})}}}]);
+//# sourceMappingURL=525.7f6e5a93.chunk.js.map
