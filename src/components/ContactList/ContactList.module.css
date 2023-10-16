@@ -2,6 +2,7 @@ ul {
     display: flex;
     flex-direction: column;
     width: 400px;
+    gap: 15;
     padding: 0;
     align-items: center;
     
