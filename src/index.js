@@ -8,7 +8,7 @@ import './index.css';
 import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter basename="/goit-react-hw-08-phonebook">
+  <BrowserRouter basename="/phonebook">
     <PersistGate loading={null} persistor={persistedStore}>
       <Provider store={store}>
         <App />
