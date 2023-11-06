@@ -1,17 +1,56 @@
 @import-normalize;
 
 body {
-  margin: 0;
-  padding: 40px;
-  font-family: 'Oxygen', sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
   font-weight: 300;
   font-size: 20px;
-  color: #283a22;
-  background-color: #65a293;
+  color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #111;
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+  background-position: center center;
 }
+  @media (max-width: 460px) {
+    body{
+      padding: 0 20px;
+    }
+  }
+  @media (min-width: 460px) {
+    body{
+      width: 440px;
+    }
+  }
+  @media (min-width: 768px) {
+   body{
+      width: 738px;
+    }
+  }
+  @media (min-width: 1020px) {
+    body{
+      width: 980px;
+    }
+  }
+  @media (min-width: 1440px) {
+    body{
+      width: 1390px;
+    }
+  }
 
+@media (min-resolution: 192dpi) {
+  body {
+    background-image: url('../images/bg-pic-2x-min.jpg');
+  }
+}
+@media (max-resolution: 191dpi) {
+  body {
+    background-image: url('../images/bg-pic-1x-min.jpg');
+  }
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

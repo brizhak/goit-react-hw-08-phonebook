@@ -10,8 +10,7 @@ import {
 } from 'constants/routes';
 import { useDispatch, useSelector } from 'react-redux';
 import { refreshUser, selectUserAuthentication } from 'redux/authReducer';
-import style from './App.module.css';
-import { StyledNavLink } from './App.styled';
+import { StyledNavLink, NavContainer, AuthContainer } from './App.styled';
 import UserMenu from './UserMenu/UserMenu';
 const NotFoundPage = lazy(() => import('pages/NotFound'));
 
@@ -25,7 +24,7 @@ const App = () => {
   return (
     <>
       <header>
-        <nav className={style.nav}>
+        <NavContainer>
           <StyledNavLink to={HOME_ROUTE}>Home</StyledNavLink>
           {authenticated ? (
             <>
@@ -33,12 +32,12 @@ const App = () => {
               <UserMenu />
             </>
           ) : (
-            <>
+            <AuthContainer>
               <StyledNavLink to={LOGIN_ROUTE}>Login</StyledNavLink>
               <StyledNavLink to={REGISTER_ROUTE}>Register</StyledNavLink>
-            </>
+            </AuthContainer>
           )}
-        </nav>
+        </NavContainer>
       </header>
       <main>
         <Suspense fallback={<Loader />}>

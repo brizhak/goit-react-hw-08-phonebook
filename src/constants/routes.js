@@ -2,7 +2,7 @@ import { PrivateRoute } from 'components/PrivateRoute/PrivateRoute';
 import { RestrictedRoute } from 'components/RestrictedRoute/RestrictedRoute';
 import { lazy } from 'react';
 
-const Home = lazy(() => import('pages/Home'));
+const Home = lazy(() => import('pages/HomePage'));
 const Phonebook = lazy(() => import('pages/Phonebook'));
 const Login = lazy(() => import('pages/Login'));
 const Register = lazy(() => import('pages/Register'));
