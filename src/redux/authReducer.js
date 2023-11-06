@@ -1,6 +1,5 @@
 import axios from 'axios';
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import Notiflix from 'notiflix';
 
 export const instance = axios.create({
   baseURL: 'https://connections-api.herokuapp.com/',
