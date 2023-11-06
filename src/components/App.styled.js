@@ -3,13 +3,13 @@ import { NavLink } from 'react-router-dom';
 
 export const StyledNavLink = styled(NavLink)`
   @media (max-width: 767px) {
-    font-size: 16px;
+    font-size: 18px;
   }
   @media (min-width: 768px) {
     font-size: 20px;
   }
   @media (min-width: 1440px) {
-    font-size: 24px;
+    font-size: 22px;
   }
   padding: 5px;
   display: inline-block;
