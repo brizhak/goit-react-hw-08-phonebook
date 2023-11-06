@@ -8,6 +8,9 @@ export const MainContainer = styled.div`
 `;
 
 export const Title = styled.h1`
+  font-size: 30px;
+  font-weight: 400;
+  color: #fff;
   @media (min-width: 375px) {
     font-size: 50px;
   }
@@ -17,7 +20,4 @@ export const Title = styled.h1`
   @media (min-width: 1440px) {
     font-size: 90px;
   }
-  font-size: 30px;
-  font-weight: 400;
-  color: #fff;
 `;

@@ -33,8 +33,8 @@ const App = () => {
             </>
           ) : (
             <AuthContainer>
-              <StyledNavLink to={LOGIN_ROUTE}>Login</StyledNavLink>
-              <StyledNavLink to={REGISTER_ROUTE}>Register</StyledNavLink>
+              <StyledNavLink to={LOGIN_ROUTE}>Log in</StyledNavLink>
+              <StyledNavLink to={REGISTER_ROUTE}>Sign up</StyledNavLink>
             </AuthContainer>
           )}
         </NavContainer>

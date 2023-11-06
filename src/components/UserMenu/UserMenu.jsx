@@ -1,7 +1,13 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { logOutUser, selectUserData } from 'redux/authReducer';
-import style from './UserMenu.module.css';
+import {
+  Container,
+  UserName,
+  Button,
+  ButtonText,
+  LogOutIcon,
+} from './UserMenu.styled';
 
 const UserMenu = () => {
   const dispatch = useDispatch();
@@ -11,10 +17,13 @@ const UserMenu = () => {
     dispatch(logOutUser());
   };
   return (
-    <div className={style.container}>
-      <p>{userData.email}</p>
-      <button onClick={handleLogOut}>Logout</button>
-    </div>
+    <Container>
+      <UserName>{userData.email}</UserName>
+      <Button onClick={handleLogOut}>
+        <ButtonText>Log out</ButtonText>
+        <LogOutIcon />
+      </Button>
+    </Container>
   );
 };
 
